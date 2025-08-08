@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LLM Doc POC — Smart Claim Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="left-panel">
+      <div class="brand">
+        <img src="/static/logo.svg" alt="logo" class="logo">
+        <h1>Smart Claim Assistant</h1>
+        <p class="muted">Parse queries, find policy clauses, and produce auditable decisions.</p>
+      </div>
+
+      <div class="card">
+        <label class="label">Enter your query</label>
+        <textarea id="query" placeholder="e.g. 46-year-old male, knee surgery in Pune, 3-month-old insurance policy"></textarea>
+
+        <label class="label">Or upload a policy (optional)</label>
+        <input id="policyFile" type="file" accept=".txt,.pdf,.doc,.docx" />
+
+        <div class="actions">
+          <button id="loadSample" class="btn ghost">Load Sample Policy</button>
+          <button id="askBtn" class="btn primary">Ask</button>
+        </div>
+
+        <div id="status" class="status"></div>
+      </div>
+
+      <footer class="footer">Proof-of-concept • Local demo • Not for production</footer>
+    </div>
+
+    <div class="right-panel">
+      <div class="result-card">
+        <div class="result-header">
+          <h2>Decision</h2>
+          <div id="decisionBadge" class="badge neutral">—</div>
+        </div>
+
+        <pre id="jsonOut" class="json">{ "Decision": "—" }</pre>
+
+        <h3>Top Matched Clauses</h3>
+        <ul id="matches" class="matches"></ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
