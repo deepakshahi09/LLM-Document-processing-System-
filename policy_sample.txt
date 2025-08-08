@@ -1,0 +1,8 @@
+Policy: Health Protect Plus
+Sum Insured: INR 2,00,000
+
+Clause 12.1: Knee replacement surgery and related procedures are covered subject to policy terms.
+Clause 12.3: Pre-existing conditions are covered after 24 months waiting period.
+Clause 15.1: Any surgical procedure has a waiting period of 3 months from policy inception for non-accident related hospitalization.
+Clause 20.2: The maximum payable for joint replacement surgeries shall not exceed INR 1,50,000.
+Clause 25.1: Cataract surgery covered after 12 months waiting period with limits as per schedule.
