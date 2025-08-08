@@ -1,0 +1,39 @@
+:root{
+  --bg:#f3f7fb; --card:#ffffff; --accent:#0b70ff; --muted:#64748b;
+  --success:#10b981; --danger:#ef4444; --glass:rgba(11,112,255,0.06);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#ffffff);min-height:100vh;color:#0f1724}
+.app{display:flex;gap:28px;padding:36px;max-width:1200px;margin:0 auto}
+.left-panel{flex:1}
+.right-panel{width:520px}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.logo{width:56px;height:56px;border-radius:10px;background:var(--glass);display:block;padding:10px}
+h1{margin:0;font-size:20px}
+.muted{color:var(--muted);font-size:13px;margin-top:4px}
+
+.card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 8px 30px rgba(12,18,34,0.06)}
+.label{display:block;margin:8px 0 6px;color:var(--muted);font-size:13px}
+textarea{width:100%;min-height:110px;padding:12px;border-radius:10px;border:1px solid #e6eef8;resize:vertical;font-size:14px}
+input[type=file]{width:100%}
+
+.actions{display:flex;gap:8px;margin-top:12px}
+.btn{padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+.btn.primary{background:var(--accent);color:white;box-shadow:0 6px 20px rgba(11,112,255,0.12)}
+.btn.ghost{background:transparent;border:1px solid rgba(11,112,255,0.12);color:var(--accent)}
+
+.status{height:26px;margin-top:12px;color:var(--muted);font-size:13px}
+
+.result-card{background:linear-gradient(180deg,#ffffff,#fbfdff);border-radius:14px;padding:18px;box-shadow:0 8px 30px rgba(12,18,34,0.06)}
+.result-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.badge{padding:6px 12px;border-radius:999px;font-weight:700}
+.badge.approved{background:rgba(16,185,129,0.12);color:var(--success)}
+.badge.rejected{background:rgba(239,68,68,0.08);color:var(--danger)}
+.badge.neutral{background:rgba(11,112,255,0.06);color:var(--accent)}
+
+.json{background:#0b1220;color:#e6f0ff;padding:12px;border-radius:8px;white-space:pre-wrap;max-height:240px;overflow:auto}
+.matches{list-style:none;padding:0;margin:10px 0 0}
+.matches li{padding:10px;border-radius:8px;border:1px solid #f1f5f9;margin-bottom:8px}
+.matches li .meta{font-size:12px;color:var(--muted);margin-bottom:6px}
+.footer{margin-top:18px;color:var(--muted);font-size:13px}
